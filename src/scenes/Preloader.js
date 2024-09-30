@@ -1,6 +1,7 @@
 import { Scene } from "phaser";
 
 
+
 export default class Preloader extends Scene {
     constructor() {
         super("Preloader")
@@ -14,7 +15,7 @@ export default class Preloader extends Scene {
 
     preload () {
         this.load.image("fondo1", "assets/fondo_1.jpg" );
-        //this.load.image("fondo2", "assets/fondo_2.png" );
+        this.load.image("fondo2", "assets/fondo_2.png" );
         this.load.image( "macha", "assets/macha.png"  );
         this.load.image( "verdurera", "assets/verdurera.png"  );
         this.load.image( "mago", "assets/mago.png"  );
@@ -26,17 +27,18 @@ export default class Preloader extends Scene {
 
     create () {
         setTimeout(() => {
+            this.scene.start("GamePueblo")
             
-            this.scene.transition({
-                target: 'Main',
-                duration: 500,
-                moveBelow: true,
-                onUpdate: (progress) => {
-                    this.cameras.main.setAlpha(1 - progress);
-                }
-            });
+            // this.scene.transition({
+            //     target: 'Main',
+            //     duration: 100,
+            //     moveBelow: true,
+            //     onUpdate: (progress) => {
+            //         this.cameras.main.setAlpha(1 - progress);
+            //     }
+            // });
 
-        }, 2000);
+        }, 500);
         
     }
 }
