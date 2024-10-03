@@ -6,7 +6,7 @@ export default class Boot extends Scene {
     }
 
     preload () {
-        this.load.image ("splash", "./assets/hoja.jpg");
+        this.load.image ("splash", "./assets/splash.png");
     }
 
     create () {
