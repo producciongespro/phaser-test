@@ -1,0 +1,27 @@
+[
+    {
+        "id": "macha",
+        "nombre": "Macha con cántaro",
+        "ext": "png"
+    },
+    {
+        "id": "verdurera",
+        "nombre": "Muchacha con canasta",
+        "ext": "png"
+    },
+    {
+        "id": "mago",
+        "nombre": "Mago sabio",
+        "ext": "png"
+    },
+    {
+        "id": "lechero",
+        "nombre": "Hombre lechero",
+        "ext": "png"
+    },
+    {
+        "id": "menu1",
+        "nombre": "fondo de menu 1",
+        "ext": "png"
+    }
+]
