@@ -22,5 +22,29 @@
         "desc": "Hombre lechero",
         "archivo": "lechero",
         "ext": "png"
-    }
+    },
+    {
+        "id": "cocinera",
+        "desc": "cocinera",
+        "archivo": "cocinera",
+        "ext": "png"
+    },
+    {
+        "id": "forajido",
+        "desc": "forajido",
+        "archivo": "forajido",
+        "ext": "png"
+    },
+    {
+        "id": "monge",
+        "desc": "monge",
+        "archivo": "monge",
+        "ext": "png"
+    },
+    {
+        "id": "panadera",
+        "desc": "panadera",
+        "archivo": "panadera",
+        "ext": "png"
+    }    
 ]
