@@ -4,5 +4,11 @@
         "color": "#fff",
         "fontFamily": "Arial",
         "align": "center"
+    },
+    "negro": {
+        "fontSize": "18px",
+        "color": "#000",
+        "fontFamily": "Arial",
+        "align": "center"
     }
 }

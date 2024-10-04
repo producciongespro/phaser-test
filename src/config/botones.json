@@ -10,5 +10,11 @@
     "desc": "Flecha verde para usar en pasar personaje",
     "archivo": "flecha-izquierda-verde",
     "ext": "png"
+  },
+  {
+    "id": "btnLapiz",
+    "desc": "Lapiz de color para edición",
+    "archivo": "btn-lapiz",
+    "ext": "png"
   }
 ]

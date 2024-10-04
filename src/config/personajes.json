@@ -1,49 +1,49 @@
 [
     {
         "id": "macha",
-        "desc": "Macha con cántaro",
+        "nombre": "La Macha",
         "archivo": "macha",
         "ext": "png"
     },
     {
         "id": "verdurera",
-        "desc": "Muchacha con canasta",
+        "nombre": "Jimena la Feliz",
         "archivo": "verdurera",
         "ext": "png"
     },
     {
         "id": "mago",
-        "desc": "Mago sabio",
+        "nombre": "El Mago Pancracio",
         "archivo": "mago",
         "ext": "png"
     },
     {
         "id": "lechero",
-        "desc": "Hombre lechero",
+        "nombre": "Benancio el Lechero",
         "archivo": "lechero",
         "ext": "png"
     },
     {
         "id": "cocinera",
-        "desc": "cocinera",
+        "nombre": "Juanita la Bonita",
         "archivo": "cocinera",
         "ext": "png"
     },
     {
         "id": "forajido",
-        "desc": "forajido",
+        "nombre": "Pepe el Forajido",
         "archivo": "forajido",
         "ext": "png"
     },
     {
         "id": "monge",
-        "desc": "monge",
+        "nombre": "Juanito Monge",
         "archivo": "monge",
         "ext": "png"
     },
     {
         "id": "panadera",
-        "desc": "panadera",
+        "nombre": "Clementina Topacio",
         "archivo": "panadera",
         "ext": "png"
     }    
