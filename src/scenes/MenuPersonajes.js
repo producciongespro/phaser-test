@@ -9,7 +9,7 @@ export default class MenuPersonajes extends Scene {
     init () {
         this.center = this.registry.get("center");
         this.personajes = this.registry.get("personajes");
-        this.indice = 0;
+        this.indice = 0; // Índice inicial
     }
 
     create () {
@@ -32,21 +32,26 @@ export default class MenuPersonajes extends Scene {
         this.personajesSprites.forEach(sprite => sprite.destroy());
         this.personajesSprites = []; // Vaciar el array de personajes
 
-        // Renderizar los personajes nuevos
-        const personaje1 = this.add.image(this.center.x - 120, this.center.y, this.personajes[i].id).setScale(0.4);
-        const personaje2 = this.add.image(this.center.x, this.center.y, this.personajes[i + 1].id).setScale(0.9);
-        const personaje3 = this.add.image(this.center.x + 120, this.center.y, this.personajes[i + 2].id).setScale(0.4);
+        // Obtener los índices de los personajes en el carrusel
+        const prevIndex = (i - 1 + this.personajes.length) % this.personajes.length;
+        const currIndex = i;
+        const nextIndex = (i + 1) % this.personajes.length;
+
+        // Renderizar los personajes con los índices calculados
+        const personaje1 = this.add.image(this.center.x - 120, this.center.y, this.personajes[prevIndex].id).setScale(0.4);
+        const personaje2 = this.add.image(this.center.x, this.center.y, this.personajes[currIndex].id).setScale(0.9);
+        const personaje3 = this.add.image(this.center.x + 120, this.center.y, this.personajes[nextIndex].id).setScale(0.4);
 
         // Guardar los sprites para luego eliminarlos
         this.personajesSprites.push(personaje1, personaje2, personaje3);
     }
 
     handleAvanzar(direccion) {
-        // Asegurar que el índice se mantenga en el rango correcto
-        if (direccion === "d" && this.indice + 3 < this.personajes.length) {
-            this.indice++;
-        } else if (direccion === "i" && this.indice > 0) {
-            this.indice--;
+        // Asegurar que el índice se mantenga en el rango correcto (carrusel)
+        if (direccion === "d") {
+            this.indice = (this.indice + 1) % this.personajes.length;
+        } else if (direccion === "i") {
+            this.indice = (this.indice - 1 + this.personajes.length) % this.personajes.length;
         }
 
         // Vuelve a renderizar los personajes con el nuevo índice
