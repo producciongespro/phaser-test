@@ -1,0 +1,14 @@
+[
+  {
+    "id": "btnFlechaDerechaVerde",
+    "desc": "Flecha verde para usar en pasar personaje",
+    "archivo": "flecha-derecha-verde",
+    "ext": "png"
+  },
+  {
+    "id": "btnFlechaIzquierdaVerde",
+    "desc": "Flecha verde para usar en pasar personaje",
+    "archivo": "flecha-izquierda-verde",
+    "ext": "png"
+  }
+]

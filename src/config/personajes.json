@@ -1,22 +1,26 @@
 [
     {
         "id": "macha",
-        "nombre": "Macha con cántaro",
+        "desc": "Macha con cántaro",
+        "archivo": "macha",
         "ext": "png"
     },
     {
         "id": "verdurera",
-        "nombre": "Muchacha con canasta",
+        "desc": "Muchacha con canasta",
+        "archivo": "verdurera",
         "ext": "png"
     },
     {
         "id": "mago",
-        "nombre": "Mago sabio",
+        "desc": "Mago sabio",
+        "archivo": "mago",
         "ext": "png"
     },
     {
         "id": "lechero",
-        "nombre": "Hombre lechero",
+        "desc": "Hombre lechero",
+        "archivo": "lechero",
         "ext": "png"
     }
 ]

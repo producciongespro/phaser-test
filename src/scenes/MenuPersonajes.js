@@ -8,11 +8,18 @@ export default class MenuPersonajes extends Scene {
 
     init () {
         this.center = this.registry.get("center");
-        this.personajes = this.registry.get("personajes");
+        this.personajes = this.registry.get("personajes");        
         
     }
 
     create () {
+        this.add.image(this.center.x, this.center.y, "bgPersonajes").setOrigin(0.5);
+        this.add.image(this.center.x - 290, this.center.y, "btnFlechaIzquierdaVerde").setOrigin(0.5).setInteractive();
+        this.add.image(this.center.x + 290, this.center.y, "btnFlechaDerechaVerde").setOrigin(0.5).setInteractive();
+        
+    }
+
+    update () {
         this.renderPersonajes(0);
     }
 

@@ -1,6 +1,7 @@
 import { Scene } from "phaser";
-import assets from "../config/assets.json";
-import txt from "../config/txtStyles.json";
+import fondos from "../config/fondos.json";
+import botones from "../config/botones.json";
+
 
 export default class Preloader extends Scene {
   constructor() {
@@ -10,16 +11,21 @@ export default class Preloader extends Scene {
   init() {
     this.center = this.registry.get("center");
     this.personajes = this.registry.get("personajes");
-    console.log("this.personajes", this.personajes);
+    this.estilosTexto = this.registry.get("estilosTexto");
     
   }
 
   preload() {
-    assets.forEach((item) =>
-      this.load.image(item.id, `assets/${item.id}.${item.ext}`)
+    fondos.forEach((item) =>
+      this.load.image(item.id, `assets/fondos/${item.archivo}.${item.ext}`)
     );
+
+    botones.forEach((item) =>
+        this.load.image(item.id, `assets/botones/${item.archivo}.${item.ext}`)
+      );
+
     this.personajes.forEach((item) =>
-      this.load.image(item.id, `assets/${item.id}.${item.ext}`)
+      this.load.image(item.id, `assets/personajes/${item.archivo}.${item.ext}`)
     );
   }
 
@@ -27,12 +33,13 @@ export default class Preloader extends Scene {
     const splash = this.add
       .image(this.center.x, this.center.y, "splash")
       .setOrigin(0.5);
+    
     this.add
       .text(
         this.center.x,
         splash.y + this.center.y + 20,
         "Cargando datos. Por favor espere",
-        txt.blanco
+        this.estilosTexto.blanco
       )
       .setOrigin(0.5);
 

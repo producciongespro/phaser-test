@@ -1,0 +1,14 @@
+[
+    {
+        "id": "bgVersus",
+        "desc": "fondo de menu versus",
+        "archivo": "bg-versus",
+        "ext": "png"
+    },
+    {
+        "id": "bgPersonajes",
+        "desc": "fondo menú para escoger persoanje",
+        "archivo": "bg-escoge-personaje",
+        "ext": "jpg"
+    }
+]

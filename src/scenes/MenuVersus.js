@@ -12,7 +12,7 @@ export default class MenuVersus extends Scene {
 
 
     create () {        
-        this.menu1 = this.add.image(this.scale.width / 2, this.scale.height / 2 , "menu1")
+        this.menu1 = this.add.image(this.scale.width / 2, this.scale.height / 2 , "bgVersus")
         .setOrigin(0.5)
         .setInteractive();
 
