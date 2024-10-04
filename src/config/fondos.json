@@ -10,5 +10,13 @@
         "desc": "fondo menú para escoger persoanje",
         "archivo": "bg-escoge-personaje",
         "ext": "jpg"
+    },
+    {
+        "id": "bgPersonajes2",
+        "desc": "marco menú para escoger persoanje",
+        "archivo": "bg-personajes-capa2",
+        "ext": "png"
     }
 ]
+
+
