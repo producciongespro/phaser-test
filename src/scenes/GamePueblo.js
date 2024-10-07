@@ -3,10 +3,13 @@ export default class GamePueblo extends Scene {
   constructor() {
     super("GamePueblo");
     this.currentPlayer1 = true;
+	this.directSpeed= 4.5;
+	this.zoom= 0.5;
+	
   }
 
   create() {
-    this.directSpeed = 4.5;
+    
     this.cameras.main.setBounds(0, 0, 5000, 2813);
 
     this.add.image(0, 0, "fondo1").setOrigin(0);
@@ -24,7 +27,7 @@ export default class GamePueblo extends Scene {
     
 
     this.cameras.main.startFollow(this.player1, true); // Inicia siguiendo a player1
-    this.cameras.main.setZoom(0.6);
+    this.cameras.main.setZoom(this.zoom);
   }
 
   update() {
